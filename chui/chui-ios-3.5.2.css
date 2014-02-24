@@ -365,7 +365,7 @@ html[dir=rtl] .toolbar > .button.align-flush {
    =========================== */
 #global-nav {
   background-color: #e74c3c;
-  border-bottom: solid 1px #a7a7aa;
+  border-bottom: solid 1px #e74c3c;
   overflow: hidden;
 
 }
