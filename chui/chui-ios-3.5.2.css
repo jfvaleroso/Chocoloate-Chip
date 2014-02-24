@@ -362,7 +362,7 @@ html[dir=rtl] .toolbar > .button.align-flush {
    Nav Bars
    =========================== */
 #global-nav {
-  background-color: #3498db;
+  background-color: #e74c3c;
   border-bottom: solid 1px #a7a7aa;
   overflow: hidden;
 
@@ -402,7 +402,7 @@ nav > h1 {
   display: inline-block;
   -webkit-box-flex: 1 !important;
   -webkit-flex: 1 !important;
-  font: normal 12pt/14pt HelveticaNeue, Sans-serif;
+  font:bold 12pt/14pt HelveticaNeue, Sans-serif;
   position: absolute;
   top: 0;
   left: 100px;
@@ -412,6 +412,7 @@ nav > h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   color:white;
+
 }
 nav > h1 + a.button {
   margin: 0;
