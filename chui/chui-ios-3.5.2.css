@@ -279,13 +279,15 @@ a.button.backTo {
   text-align: left;
   padding: 0 0 0 20px !important;
   line-height: 28px;
-  color: #007aff;
+  /*color: #007aff;*/
   border: none;
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
   display: inline-block !important;
   height: 30px;
+  color:white;
+  
 }
 a.button.back::before,
 a.button.backTo::before {
