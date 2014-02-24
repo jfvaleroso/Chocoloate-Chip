@@ -144,7 +144,10 @@
     $(function() {
       
         document.addEventListener("deviceready", onDeviceReady, false);
-        StatusBar.backgroundColorByHexString("#3498db");
+
+        window.onload = function () {
+            StatusBar.backgroundColorByHexString("#3498db");
+        };
 
       ////////////////////
       // Segmented Control
