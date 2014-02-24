@@ -2211,8 +2211,8 @@ html[dir=rtl] .switch.on > em {
    Tab Bar
    =========================== */
 body.hasTabBar nav {
-  background-color: #f7f7f7;
-  border-bottom: solid 1px #a7a7aa;
+  background-color: #e74c3c;
+  border-bottom: solid 1px #e74c3c;
 }
 body.hasTabBar article {
   bottom: 50px;
