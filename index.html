@@ -181,7 +181,11 @@
 
             navigator.camera.getPicture(
                 function (imageData) {
-                    $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
+                  
+                    $('li.image-list').prepend('<img src="" />');
+                    $('li.image-list img:last').attr('src', "data:image/jpeg;base64," + imageData);
+                    $('li.image-list img').show();
+
                 },
                 function () {
                     alert('Error taking picture', 'Error');
@@ -609,7 +613,10 @@
       <h2>The Merchant of Venice</h2>
       <ul class='list'>
 
-          <li class="topcoat-list__item"><a href="#" class="change-pic-btn"><img src="" class="employee-image"><p>Change Picture</p></a></li>
+          <a href="#" class="change-pic-btn"><p>Change Picture</p></a>
+          <li class="image-list">
+              <img src="" class="employee-image">
+          </li>
         
 
           <li>

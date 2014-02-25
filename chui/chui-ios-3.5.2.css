@@ -2326,7 +2326,11 @@ body.hasTabBar .next:not(.navigable) {
    -webkit-mask-image: url('../images/icons/Favorite.svg');
 }   
 
-.change-pic-btn img {
-    width: 280px;
+li.image-list img {
+    width: 290px;
     margin:0 auto;
+}
+
+li.image-list img {
+    display:none;
 }
