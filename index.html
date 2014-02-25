@@ -162,40 +162,18 @@
         };
         $.UITabbar(opts);
 
-      
+        // If you swipe your page right you screen will be filled by page1 content.
+        $("#listitem").swiperight(function () {
+            $.mobile.changePage("#page1");
+        });
+
+        // If you swipe your page right you screen will be filled by page1 content.
+        $("#listitem").swipeleft(function () {
+            $.mobile.changePage("#page2");
+        });
 
       
-        this.el.on('click', '.change-pic-btn',changePicture);
-
-        var changePicture = function (event) {
-            event.preventDefault();
-            if (!navigator.camera) {
-                alert("Camera API not supported", "Error");
-                return;
-            }
-            var options = {
-                quality: 50,
-                destinationType: Camera.DestinationType.DATA_URL,
-                sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
-                encodingType: 0     // 0=JPG 1=PNG
-            };
-
-            navigator.camera.getPicture(
-                function (imageData) {
-                    $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
-                },
-                function () {
-                    alert('Error taking picture', 'Error');
-                },
-                options);
-
-            return false;
-        };
-
-
-
-
-
+    
       ////////////////////
       // Segmented Control
       ////////////////////
@@ -609,7 +587,7 @@
     <a href='javascript:void(null)' class='button align-flush' id="openPopup">Open</a>
   </nav>
   <article id='popup-article' class='next'>
-    <section>
+    <!--<section>
       <p id='popupMessageTarget'></p>
       <h2>The Merchant of Venice</h2>
       <ul class='list'>
@@ -621,7 +599,34 @@ It droppeth as the gentle rain from heaven upon the place beneath. It is twice b
         </li>
       </ul>
       <p>Portia's entreaty to Shylock to show mercy to Antonio.</p>
-    </section>
+    </section>-->
+
+      <div data-role="page" id="home">
+          <div data-role="content">
+              <p>
+              </p><ul data-role="listview" data-inset="true" data-theme="c">
+                  <li id="listitem">Swipe Right to view Page 1</li>
+              </ul>
+              <p></p>
+          </div>
+      </div>
+
+      <div data-role="page" id="page1">
+          <div data-role="content">
+
+              <ul data-role="listview" data-inset="true" data-theme="c">
+                  <li data-role="list-divider">Navigation</li>
+                  <li><a href="#home">Back to the Home Page</a></li>
+              </ul>
+
+              <p>
+                  Yeah!
+                  You Swiped Right to view Page 1
+              </p>
+          </div>
+      </div>
+
+
   </article>
   <nav>
     <a class='button back'>Demo</a>
