@@ -162,15 +162,7 @@
         };
         $.UITabbar(opts);
 
-        // If you swipe your page right you screen will be filled by page1 content.
-        $("#listitem").swiperight(function () {
-            $.mobile.changePage("#page1");
-        });
-
-        // If you swipe your page right you screen will be filled by page1 content.
-        $("#listitem").swipeleft(function () {
-            $.mobile.changePage("#page2");
-        });
+      
 
       
     
@@ -587,7 +579,7 @@
     <a href='javascript:void(null)' class='button align-flush' id="openPopup">Open</a>
   </nav>
   <article id='popup-article' class='next'>
-    <!--<section>
+    <section>
       <p id='popupMessageTarget'></p>
       <h2>The Merchant of Venice</h2>
       <ul class='list'>
@@ -599,34 +591,7 @@ It droppeth as the gentle rain from heaven upon the place beneath. It is twice b
         </li>
       </ul>
       <p>Portia's entreaty to Shylock to show mercy to Antonio.</p>
-    </section>-->
-
-      <div data-role="page" id="home">
-          <div data-role="content">
-              <p>
-              </p><ul data-role="listview" data-inset="true" data-theme="c">
-                  <li id="listitem">Swipe Right to view Page 1</li>
-              </ul>
-              <p></p>
-          </div>
-      </div>
-
-      <div data-role="page" id="page1">
-          <div data-role="content">
-
-              <ul data-role="listview" data-inset="true" data-theme="c">
-                  <li data-role="list-divider">Navigation</li>
-                  <li><a href="#home">Back to the Home Page</a></li>
-              </ul>
-
-              <p>
-                  Yeah!
-                  You Swiped Right to view Page 1
-              </p>
-          </div>
-      </div>
-
-
+    </section>
   </article>
   <nav>
     <a class='button back'>Demo</a>
