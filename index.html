@@ -182,7 +182,7 @@
             navigator.camera.getPicture(
                 function (imageData) {
                   
-                    $('li.image-list').prepend('<img src="" />');
+                    $('li.image-list').append('<img src="" />');
                     $('li.image-list img:last').attr('src', "data:image/jpeg;base64," + imageData);
                     $('li.image-list img').show();
 
