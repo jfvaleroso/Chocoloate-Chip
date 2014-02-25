@@ -2325,3 +2325,9 @@ body.hasTabBar .next:not(.navigable) {
 .tabbar > .button.favorites > .icon  {
    -webkit-mask-image: url('../images/icons/Favorite.svg');
 }   
+
+.change-pic-btn img {
+    width: 80px;
+    height: 80px;
+    margin:0 auto;
+}
